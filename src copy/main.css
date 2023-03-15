@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: ghostwhite;
+}
+.dropdown:hover .dropdown-content{
+display:block;
+}
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+.open .middle{
+    display: none;
+}
+.open .top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);    
+}
+.open .bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.navbar{
+    background-image: linear-gradient(to right,#a5f3fc,#0891b2,#0c4a6e);
+}
